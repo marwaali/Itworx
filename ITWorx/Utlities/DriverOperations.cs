@@ -26,7 +26,6 @@ namespace ITWorx.Utlities
         public void SortDescending(IWebElement element)
         {
             Actions action = new Actions(_driver);
-            action.DragAndDropToOffset(element, 30, 0).Build().Perform();
             action.DoubleClick(element).Build().Perform();
         }
 
